@@ -1,6 +1,9 @@
 {
   "name": "dash-dev",
   "image": "mbhband/for_learning_plotly:latest",
+  "workspaceMount": "source=${localWorkspaceFolder},target=/app,type=bind",
+  "workspaceFolder": "/app",
+
   "runArgs": ["-p", "8050:8050"],
   "customizations": {
     "vscode": {
