@@ -1,9 +1,11 @@
 {
   "name": "dash-dev",
-  "image": "mbhband/for_learning_plotly:latest",
-  "workspaceMount": "source=${localWorkspaceFolder},target=/app,type=bind",
+  "build": {
+    "dockerfile": ".devcontainer/Dockerfile",
+    "context": ".."
+  },
   "workspaceFolder": "/app",
-
+  "workspaceMount": "source=${localWorkspaceFolder},target=/app,type=bind",
   "runArgs": ["-p", "8050:8050"],
   "customizations": {
     "vscode": {
