@@ -1,0 +1,17 @@
+{
+  "name": "dash-dev",
+  "image": "mbhband/for_learning_plotly:latest",
+  "runArgs": ["-p", "8050:8050"],
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-toolsai.jupyter",
+        "ms-azuretools.vscode-docker"
+      ]
+    }
+  },
+  "remoteUser": "root",
+  "overrideCommand": true,
+  "postCreateCommand": "sleep infinity"
+}

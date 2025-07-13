@@ -16,3 +16,5 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 # Dash 앱 포트
 EXPOSE 8050
+
+CMD ["sleep", "infinity"]
