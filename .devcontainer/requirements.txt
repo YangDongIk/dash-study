@@ -1,6 +1,0 @@
-dash
-plotly
-pandas
-jupyter
-jupyter-dash
-ipykernel
